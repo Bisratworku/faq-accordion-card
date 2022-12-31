@@ -1,2 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+       
+    width: 75%;
+    height: 70%;
+    border-radius: 12px;
+    display: flex;
+    
+}
+.image {
+    border-radius: 12px 0 0 12px;
+    background: white;
+    background-position-x: 120%;
+    background-position-y: 65%;
+    background-repeat: no-repeat;
+    background-size: 170% 140%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    width: 38%;
+    display: flex;
+}
+.hero-image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 53%;
+    background-position-x: -4rem;
+    background-size: 100% 70%;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+}
+.blend {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70%;
+    width: 5%;
+}
+.blend img{
+    position: relative;
+    left: 3%;
+    top: 12%;   
+    width: -10rem; 
+    height: 24%;
+}
+.text {
+    border-radius: 0 12px 12px 0;
+    background-color: white;
+    
+    width: 70%;
+}
+.header {
+    
+    height: 20%;
+    display: flex;
+    align-items: center;
+    color:  hsl(238, 29%, 16%);
+}
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    padding-right: 40px;
+    height: 79.3%;
+}
+.q-1 {
+    
+    cursor: pointer;
+    border-bottom: 3px solid hsl(240, 5%, 91%);
+    height: 15%;
+    gap: 10%;
+    display: flex;
+    align-items: center;
+}
+.q-1:hover {
+    color: hsl(14, 88%, 65%);
+}
+.a-1{
+    
+    height: 15%;
+    text-align: start;
+    color: hsl(240, 6%, 50%);
+    font-size: 15px;
+    
+}
+.flip {
+    transform: rotate(-180deg);
+}
+@media(max-width:1000px) {
+    .card {
+    
+        width: 90%;
+        height: 60%;
+    }
+    .hero-image {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 49%;
+        background-position-x: -3rem;
+        background-size: 100% 70%;
+        background-image: url(images/illustration-woman-online-desktop.svg);
+    }
+    .blend img {
+        position: relative;
+        left: 20%;
+        top: 2rem;
+        width: 5rem;
+        height: 5rem ;    
+    }
+}
+@media(min-width:400px) and (max-width:750px) {
+    .card {
+        margin-top: 5rem;
+        display: block;
+        width: 20rem;
+        height: 30rem;
+        
+    }
+    .image {
+        border-radius: 12px 12px 0 0 ;
+        background-image: url(images/bg-pattern-mobile.svg);
+        display: block;
+        background-size: 15rem;
+        background-position: top;
+        width: 100%;
+        height: 24%;
+    }
+    .hero-image {
+        position: relative;
+        top: -90%;
+        height: 11rem;
+        background-image: url(images/illustration-woman-online-mobile.svg);
+        background-size: 72%;
+        background-position-y: 0.1rem;
+        background-position-x: 3rem;
+        border: 0;
+    }
+    .blend {
+        overflow: hidden;
+        top: 15px;
+        width: 0;
+        height: 0;
+    }
+    .text { 
+        border-radius: 0 0 12px 12px;
+        width: 100%;
+        height: 75.5%;
+    } 
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    .q-1,.q-2,.q-3,.q-4,.q-5 {
+        padding-left: 5px;
+        font-size: 12px;
+    } 
+    .a-1{
+        font-size: 12px;
+    }
+    ul {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
